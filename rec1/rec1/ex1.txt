@@ -1,0 +1,26 @@
+Before running the code:
+
+The function will initialize variables i and t and they will have random data assigned to them.
+j is going to equal to n
+s is going to equal 1
+
+Since s is equal to 1 the while loop will run (since 1 is equivalent to True)
+Then it will set s = 0
+Then a for loop is initialized; i is assigned 0, and the loop will run as long as i is less than j, once an iteration of the loop is finished it will
+  increase i by 1.
+There is an if statement comparing the items at possition i in array x with the items at possitions i-1 in array x. (current < prev values)
+If the if statement is true then t will adopt the value of the possition i in array x. then the current possition (i) of the x array will adopt
+  the value of the prev possition (i-1), the prev possition will then adopt the value of t, and s is assigned the value of 1; allowing the while loop
+  to repeat again.
+
+Main has an array of ints by the name of x, there is an int value by the name of n that has the result of the size of the array x divided by the value
+  at the 0 place in the array x, the int i is initialize with random data.
+The first for loop sets the value of i equal to 0, then as long as i is less than n it will execuse the code, every iteration i is incremented by 1.
+The loop first prints the value that it's on the i iteration of the x array, then if i is equal to n-1 it will print out a new line, else a space.
+Once the foor loop is done we use the function "function" and pass the values of x(array) and n(int).
+We then repeat the same for loop as before. (line 18)
+
+My prediction:
+
+15, 56, 12, -21, 1, 659, 3, 83, 51, 3, 135, 0
+-21, 0, 1, 3, 3, 12, 15, 51, 56, 83, 135, 659

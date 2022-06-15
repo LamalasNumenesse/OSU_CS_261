@@ -1,0 +1,10 @@
+I would personally use a Linked List as opposed to a dynamic array.
+The reason why I would choose a Linked List would be because, A linked List
+would not consummed as much memory resource as a dynamic array. Also, since
+we aren't worring about sorthing the list, this makes it perfect to implement
+the "...og entries will be written to the file in the same order they were 
+collected." aspect of the task. We can use sentinels to figure out more 
+efficiently which one was the last added log entry without having to worry about
+size. One thing that I would argue agains using linked list would be that; it would
+be harder to get a log that is on index n since, we would have to iterate through the
+whole list, as opposed to, return array[n]. 

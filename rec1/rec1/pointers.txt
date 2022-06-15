@@ -1,0 +1,42 @@
+Output: 
+1: a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x40074d
+  a. Since we are outputing the pointers (denoted by %p) print f give us
+     The address of a, b, and c.
+  b. a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x40074d
+  c. a = random memory, b = 0x1e7e010, c = 0x40074d
+
+2: a[0] = 200, a[1] = 101, a[2] = 102, a[3] = 103
+  a. Before the printf we made c be equal to a, making it an array. we
+     then made a for loop to add 100+1 to a[i]. This is why a[1] = 101,
+     however, the reason why a[0] = 200 is because we let c be a pointer
+     to the array a so; c[0] = 200 is equivalent to a[0] = 200
+  b. a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x7ffc66525ed1
+  c. a = array of numbers, b = 0x1e7e010, c = a
+
+3: a[0] = 200, a[1] = 300, a[2] = 301, a[3] = 302
+  a. We are assigning c[1] (aka a[1]) the value of 300, we are assigning
+     301 on the 3rd place on the array (a fancy way of saying c[2]),
+     the same with 3[c] = 302 it accomplish the same thing as c[3] = 302
+  b. a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x7ffc66525ed1
+  c. a = array of numbers, b = 0x1e7e010, c = a
+
+4: a[0] = 200, a[1] = 400, a[2] = 301, a[3] = 302
+  a. What my best guess of what is happening here is; c = c+1 is increasing
+     the index so instad of 0 it's now 1, and *c = 400 is inserting 400 to
+     the current index, aka 1.
+  b. a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x7ffc66525ed1
+  c. a = array of numbers, b = 0x1e7e010, c = a
+
+5: a[0] = 200, a[1] = 128144, a[2] = 256, a[3] = 302
+  a. From what I can gather, we are moving the index by 1 so instead of c[1]
+     we are now in a[2], we know that c[2] is 301 and we are setting the acii
+     result of 302 (301 + 1) in acii to int. we are then adding (I think) 500
+     to c[2] increasing the amount of bites.
+  b. a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x7ffc66525ed1
+  c. a = array of numbers, b = 0x1e7e010, c = a
+
+6: a = 0x7ffc66525ed0, b = 0x7ffc66525ed4, c = 0x7ffc66525ed1
+  a. They all point to the same address and can manipulate the same data, however,
+     they are still their own entity.
+  b. a = 0x7ffc66525ed0, b = 0x1e7e010, c = 0x7ffc66525ed1
+  c. a = c = b
